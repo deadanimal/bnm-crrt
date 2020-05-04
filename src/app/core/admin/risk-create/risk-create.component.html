@@ -1,0 +1,624 @@
+<div class="header pb-6">
+    <div class=" container-fluid">
+        <div class=" header-body">
+            <div class=" row align-items-center py-4">
+                <div class=" col-lg-6 col-7">
+                    <h6 class=" h2 text-dark d-inline-block mb-0">Risk Management</h6>
+
+                    <nav aria-label="breadcrumb" class=" d-none d-md-inline-block ml-md-4">
+                        <ol class=" breadcrumb breadcrumb-links breadcrumb-dark">
+                            <li class=" breadcrumb-item">
+                                <a href="javascript:void(0)"> <i class="fas fa-cogs text-dark"> </i> </a>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt--6">
+    <div class="row">
+        <div class="col">
+            <tabset type="pills" class="nav-fill flex-column flex-md-row">
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="fas fa-clipboard-list mr-2"></i>Risk Detail
+                    </ng-template>
+                    <div class="card mt-2">
+                        <div class="card-header bg-secondary">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="h3 mb-0">Rik Detail</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-primary btn-sm">
+                                        Add
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">ID</label>
+                                        <input class="form-control" placeholder="Enter ID">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Risk ref</label>
+                                        <input class="form-control" placeholder="Enter risk ref">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Risk category</label>
+                                        <input class="form-control" placeholder="Enter risk category">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Version</label>
+                                        <input class="form-control" placeholder="Enter version">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Financial institution</label>
+                                        <input class="form-control" placeholder="Enter financial institution">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Institution</label>
+                                        <input class="form-control" placeholder="Enter institution name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Descriptions</label>
+                                        <textarea class="form-control" placeholder="Enter descriptions"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Impact descriptions</label>
+                                        <textarea class="form-control"
+                                            placeholder="Enter impact descriptions"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Asset</label>
+                                        <input class="form-control" placeholder="Enter asset">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Date raised</label>
+                                        <input class="form-control" placeholder="Enter" type="date">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Status</label>
+                                        <input class="form-control" placeholder="Enter status">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Group owner</label>
+                                        <input class="form-control" placeholder="Enter group owner">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Risk Class Level</label>
+                                        <input class="form-control" placeholder="Enter level">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Modified by</label>
+                                        <input class="form-control" placeholder="Enter">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Owner</label>
+                                        <input class="form-control" placeholder="Enter owner">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Last modified</label>
+                                        <input class="form-control" placeholder="Enter" type="date">
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label class="form-control-label">Impact</label>
+                                        <input class="form-control" placeholder="Enter impact">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="fas fa-paste mr-2"></i>Journals
+                    </ng-template>
+                    <div class="card mt-2">
+                        <div class="card-header bg-secondary">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="h3 mb-0">Journals</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-primary btn-sm"
+                                        (click)="openModal(addJournal)">
+                                        Add journal
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="responsive-table">
+                            <table class="table align-items-center table-flush">
+                                <thead class="thead-light">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Journal No.</th>
+                                        <th scope="col">Comment</th>
+                                        <th scope="col">Attached Document</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Date Created</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="list">
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>412412</td>
+                                        <td>Risk reference</td>
+                                        <td>
+                                            <a href="" target="_blank">Risk_Management.pdf</a>
+                                        </td>
+                                        <td>Risk Plan</td>
+                                        <td>20/01/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>412413</td>
+                                        <td>Risk reference</td>
+                                        <td>
+                                            <a href="" target="_blank">Risk_Management.pdf</a>
+                                        </td>
+                                        <td>Risk Plan</td>
+                                        <td>25/01/2020</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>412414</td>
+                                        <td>Risk reference</td>
+                                        <td>
+                                            <a href="" target="_blank">Risk_Management.pdf</a>
+                                        </td>
+                                        <td>Risk Plan</td>
+                                        <td>27/01/2020</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </tab>
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="fas fa-paste mr-2"></i>Standard ISO
+                    </ng-template>
+                    <div class="card mt-2">
+                        <div class="card-header bg-secondary">
+                            <h5 class="h3 mb-0">Standard ISO</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="h3 mb-0">Unlinked Standard</h5>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center table-flush">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Code</th>
+                                                        <th scope="col">Title</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list">
+                                                    <tr>
+                                                        <th scope="col">ISO91231</th>
+                                                        <td>General Management</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">ISO91233</th>
+                                                        <td>Manufacturing License</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">ISO91236</th>
+                                                        <td>Operational SOP</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="h3 mb-0">Linked Standard</h5>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center table-flush">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Code</th>
+                                                        <th scope="col">Title</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list">
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="fas fa-paste mr-2"></i>Associated Items
+                    </ng-template>
+                    <div class="card mt-2">
+                        <div class="card-header bg-secondary">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="h3 mb-0">Operational</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-primary btn-sm"
+                                        (click)="openModal(addAssociated)">
+                                        Add associated item
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                                <tbody class="list">
+                                    <tr>
+                                        <th scope="col">ID21212</th>
+                                        <td>Department A Operational Impact - Delayed Working Progress</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h5 class="h3 mb-0">Financial</h5>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table align-items-center table-flush">
+                                <tbody class="list">
+                                    <tr>
+                                        <th scope="col">ID21213</th>
+                                        <td>Internal Audit</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">ID21214</th>
+                                        <td>Monthly Report</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h5 class="h3 mb-0">Management</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>There area no management issue associated with this risk</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header bg-secondary">
+                            <h5 class="h3 mb-0">Security</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>There area no security issue associated with this risk</p>
+                        </div>
+                    </div>
+                </tab>
+                <tab>
+                    <ng-template tabHeading>
+                        <i class="fas fa-paste mr-2"></i>Controls
+                    </ng-template>
+                    <div class="card mt-2">
+                        <div class="card-header bg-secondary">
+                            <div class="row">
+                                <div class="col">
+                                    <h5 class="h3 mb-0">Controls</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <button type="button" class="btn btn-primary btn-sm"
+                                        (click)="openModal(addControl)">
+                                        Add control
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="h3 mb-0">Unlinked Control Approval</h5>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center table-flush">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Title</th>
+                                                        <th scope="col">Type</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list">
+                                                    <tr>
+                                                        <th scope="col">Senior Management</th>
+                                                        <td>Operational</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">Review Period</th>
+                                                        <td>Operational</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col">Assessment Review</th>
+                                                        <td>Operational</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="h3 mb-0">Linked Control Approval</h5>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table align-items-center table-flush">
+                                                <thead class="thead-light">
+                                                    <tr>
+                                                        <th scope="col">Title</th>
+                                                        <th scope="col">Type</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="list">
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="col"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </tab>
+            </tabset>
+        </div>
+    </div>
+</div>
+
+<ng-template #addJournal>
+    <div class=" modal-header">
+        <h6 class=" modal-title" id="modal-title-default">
+            Add new journal
+        </h6>
+
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="modal.hide()">
+            <span aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class=" modal-body">
+        <div class="form-group">
+            <label class="form-control-label">Journal no.</label>
+            <input class="form-control" placeholder="Enter journal no.">
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">Comment</label>
+            <textarea class="form-control" placeholder="Enter comment"></textarea>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Document title</label>
+                    <input class="form-control" placeholder="Enter document title">
+                </div>
+            </div>
+            <div class="col">
+                <div class="custom-file">
+                    <input
+                      class="custom-file-input"
+                      id="customFileLang"
+                      lang="en"
+                      type="file"
+                    />
+    
+                    <label class="custom-file-label" for="customFileLang">
+                      Select file
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class=" btn btn-primary" type="button" (click)="modal.hide()">
+            Save
+        </button>
+
+        <button class=" btn btn-link ml-auto" data-dismiss="modal" type="button" (click)="modal.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>
+
+<ng-template #addAssociated>
+    <div class=" modal-header">
+        <h6 class=" modal-title" id="modal-title-default">
+            Add new associated item
+        </h6>
+
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="modal.hide()">
+            <span aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class=" modal-body">
+        <div class="form-group">
+            <label class="form-control-label">Item no.</label>
+            <input class="form-control" placeholder="Enter item no.">
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">Comment</label>
+            <textarea class="form-control" placeholder="Enter comment"></textarea>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Document title</label>
+                    <input class="form-control" placeholder="Enter document title">
+                </div>
+            </div>
+            <div class="col">
+                <div class="custom-file">
+                    <input
+                      class="custom-file-input"
+                      id="customFileLang"
+                      lang="en"
+                      type="file"
+                    />
+    
+                    <label class="custom-file-label" for="customFileLang">
+                      Select file
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class=" btn btn-primary" type="button" (click)="modal.hide()">
+            Save
+        </button>
+
+        <button class=" btn btn-link ml-auto" data-dismiss="modal" type="button" (click)="modal.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>
+
+<ng-template #addControl>
+    <div class=" modal-header">
+        <h6 class=" modal-title" id="modal-title-default">
+            Add new control
+        </h6>
+
+        <button aria-label="Close" class=" close" data-dismiss="modal" type="button" (click)="modal.hide()">
+            <span aria-hidden="true"> × </span>
+        </button>
+    </div>
+
+    <div class=" modal-body">
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Control name</label>
+                    <input class="form-control" placeholder="Enter control name">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Control type</label>
+                    <input class="form-control" placeholder="Enter control type">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="form-control-label">Description </label>
+            <textarea class="form-control" placeholder="Enter description"></textarea>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Owner</label>
+                    <input class="form-control" placeholder="Enter owner name">
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label class="form-control-label">Review duration (days)</label>
+                    <input class="form-control" placeholder="Enter duration">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class=" btn btn-primary" type="button" (click)="modal.hide()">
+            Save
+        </button>
+
+        <button class=" btn btn-link ml-auto" data-dismiss="modal" type="button" (click)="modal.hide()">
+            Close
+        </button>
+    </div>
+</ng-template>
